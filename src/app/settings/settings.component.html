@@ -1,0 +1,11 @@
+<h2>{{title}}</h2>
+<br>
+<div *ngFor="let x of categories ">
+
+  <ul>
+    <li>
+      <a (click)="addCategory(x.id)">{{x.name}}</a>
+    </li>
+  </ul>
+</div>
+<button class="button" (click)="goToGroups()"> Continue... </button>

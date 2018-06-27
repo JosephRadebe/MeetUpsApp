@@ -1,0 +1,19 @@
+<h2>{{title}}</h2>
+
+<h3>Meetups for:</h3>
+<div *ngFor="let i of getGroups">
+  
+  <h5> {{ i.shortname }} Group</h5>
+
+  <br>
+  <div *ngFor="let z of groupsArray">
+
+    <ul *ngFor="let x of z.results">
+      <li>
+        <a>{{x.name}}</a>
+
+      </li>
+    </ul>
+  </div>
+</div>
+<button class="button" (click)="goToHome()"> Go Back </button>
